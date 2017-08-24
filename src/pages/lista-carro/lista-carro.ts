@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
+import { EditaCarroPage } from "../edita-carro/edita-carro";
 
 /**
  * Generated class for the ListaCarroPage page.
@@ -31,7 +32,8 @@ export class ListaCarroPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public af: AngularFireDatabase
+    public af: AngularFireDatabase,
+    public modal: ModalController
   
   ) {
     this.lista = this.af.list('/carros');
@@ -46,7 +48,7 @@ export class ListaCarroPage {
   }
 
   editar(id){
-
+    this.modal.create(EditaCarroPage, {id: id}).present();
   }
 
 

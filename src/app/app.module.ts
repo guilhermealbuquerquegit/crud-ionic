@@ -13,15 +13,18 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ListaCarroPage } from "../pages/lista-carro/lista-carro";
+import { EditaCarroPage } from "../pages/edita-carro/edita-carro";
+
+
 
 const firebaseAppConfig: FirebaseAppConfig = {
     
-    apiKey: "AIzaSyABfwjEI3liO-SxDtRlTVT5iswHI1VzJ-c",
-    authDomain: "crud-ionic-38768.firebaseapp.com",
-    databaseURL: "https://crud-ionic-38768.firebaseio.com",
-    projectId: "crud-ionic-38768",
-    storageBucket: "",
-    messagingSenderId: "648709846884"
+  apiKey: "AIzaSyDJRxBnmEtXLfZM9d0XWCP5kWSjL92wVxI",
+  authDomain: "crud-ionic-3efcf.firebaseapp.com",
+  databaseURL: "https://crud-ionic-3efcf.firebaseio.com",
+  projectId: "crud-ionic-3efcf",
+  storageBucket: "crud-ionic-3efcf.appspot.com",
+  messagingSenderId: "895951728781"
 };
 
 @NgModule({
@@ -29,7 +32,8 @@ const firebaseAppConfig: FirebaseAppConfig = {
     MyApp,
     HomePage,
     TabsPage,
-    ListaCarroPage
+    ListaCarroPage,
+    EditaCarroPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,8 @@ const firebaseAppConfig: FirebaseAppConfig = {
     MyApp,
     HomePage,
     TabsPage,
-    ListaCarroPage
+    ListaCarroPage,
+    EditaCarroPage
   ],
   providers: [
     StatusBar,
