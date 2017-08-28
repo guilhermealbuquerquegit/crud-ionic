@@ -3,12 +3,7 @@ import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angu
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 import { EditaCarroPage } from "../edita-carro/edita-carro";
 
-/**
- * Generated class for the ListaCarroPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+
 
 @IonicPage()  
 
@@ -43,8 +38,8 @@ export class ListaCarroPage {
 
    cadastrar(){
       this.lista.push(this.carro).then(() => {
-      this.carro = new Carro();
-    });
+      this.carro = new Carro();''
+    }); 
   }
 
   editar(id){
