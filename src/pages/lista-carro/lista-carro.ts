@@ -38,7 +38,7 @@ export class ListaCarroPage {
 
    cadastrar(){
       this.lista.push(this.carro).then(() => {
-      this.carro = new Carro();''
+      this.carro = new Carro();
     }); 
   }
 
